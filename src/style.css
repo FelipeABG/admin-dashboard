@@ -1,0 +1,44 @@
+/* Global styles */
+:root{
+    --purple: #7c3aed;
+    --gray: #cbd5e1;
+    --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+    font-family: "Roboto", sans-serif;
+}
+
+/* Page structre */
+body, html{
+    width: 100%;
+    height: 100%;
+    padding:0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+}
+
+.sidebar-container{
+    grid-column: 1 / 2;
+    background-color: var(--purple);
+}
+
+.main-container{
+    grid-column: 2/5;
+    display: grid;
+    grid-template: repeat(5, 1fr) / 1fr;
+    background-color: var(--gray);
+
+}
+
+header{
+    grid-row: 1/2;
+    box-shadow: var(--shadow);
+    background-color: white;
+}
+
+main{
+    grid-row: 2/6;
+}
