@@ -7,6 +7,7 @@
     font-family: "Roboto", sans-serif;
 }
 
+
 /* Page structure */
 body, html{
     width: 100%;
@@ -43,6 +44,7 @@ main{
     grid-row: 2/6;
 }
 
+
 /* Sidebar */
 .logo-container{
     height: 13%;
@@ -50,6 +52,7 @@ main{
     align-items: center;
     gap: 10px;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .logo-container img{
@@ -73,6 +76,7 @@ main{
     align-items: center;
     padding-left: 30px;
     gap: 10px;
+    transition: 100ms;
 }
 
 .option:hover{
@@ -89,3 +93,6 @@ main{
     color: white;
     font-size: 1rem;
 }
+
+
+/* Header */
