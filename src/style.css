@@ -17,7 +17,7 @@ body, html{
 
 body{
     display: grid;
-    grid-template: 1fr / repeat(4, 1fr);
+    grid-template: 1fr / repeat(5, 1fr);
 }
 
 .sidebar-container{
@@ -26,7 +26,7 @@ body{
 }
 
 .main-container{
-    grid-column: 2/5;
+    grid-column: 2/6;
     display: grid;
     grid-template: repeat(5, 1fr) / 1fr;
     background-color: var(--gray);
@@ -46,10 +46,46 @@ main{
 /* Sidebar */
 .logo-container{
     height: 13%;
-    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-left: 20px;
+}
+
+.logo-container img{
+    width: 47px;
+}
+
+.logo-container p{
+    color: white;
+    font-size: 1.7rem;
 }
 
 .options-container{
+    display: flex;
+    flex-direction: column;
     height: 60%;
-    border-bottom: 1px solid black;
+    gap: 50px;
+}
+
+.option{
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    gap: 10px;
+}
+
+.option:hover{
+    transform: scale(1.1);
+    transition: 100ms;
+}
+
+.option img{
+    width: 25px;
+}
+
+.option p{
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
 }
