@@ -156,6 +156,12 @@ header{
 
 .notification-img{
     width: 30px;
+    transition: 100ms;
+}
+
+.notification-img:hover{
+    transform: scale(1.1);
+    transition: 100ms;
 }
 
 .profile p{
@@ -194,6 +200,10 @@ header{
     align-items: center;
     justify-content: center;
     gap: 20px;
+}
+
+.text-container{
+    cursor: pointer;
 }
 
 .small-text{
