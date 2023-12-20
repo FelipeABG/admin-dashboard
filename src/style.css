@@ -12,7 +12,7 @@
 body, html{
     width: 100%;
     height: 100%;
-    padding:0;
+    padding: 0;
     margin: 0;
 }
 
@@ -80,8 +80,7 @@ main{
 }
 
 .option:hover{
-    transform: scale(1.1);
-    transition: 100ms;
+    background-color: #8d56eb;
 }
 
 .option img{
@@ -96,3 +95,114 @@ main{
 
 
 /* Header */
+header{
+    display: grid;
+    grid-template: repeat(2, 1fr)/ 1fr;
+}
+
+.upper-container{
+    grid-row: 1/2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lower-container{
+    grid-row: 2/3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upper-container,
+.lower-container{
+    padding: 0 40px;
+}
+
+/* Upper container */
+.search-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-bar img{
+    width: 25px;
+}
+
+.search-bar input{
+    width: 500px;
+    height: 29px;
+    border: none;
+    background-color: var(--gray);
+    border-radius: 20px;
+    font-size: 1rem;
+}
+
+.search-bar input:focus{
+    outline: none;
+    border: 2px solid var(--purple);
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-img{
+    width: 60px;
+    border-radius: 50%;
+}
+
+.notification-img{
+    width: 30px;
+}
+
+.profile p{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* Lower container */
+.user img{
+    width: 70px;
+}
+
+.buttons-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons-container button{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--purple);
+    color: white;
+}
+
+.buttons-container button:hover{
+    background-color: #8d56eb;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.small-text{
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.big-text{
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 0;
+}
