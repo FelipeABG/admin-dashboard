@@ -3,6 +3,7 @@
     --purple: #7c3aed;
     --gray: #cbd5e1;
     --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    --text-color: rgb(103, 103, 103);
 
     font-family: "Roboto", sans-serif;
     box-sizing: border-box;
@@ -270,7 +271,7 @@ header{
 .announcements{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
 }
@@ -278,6 +279,7 @@ header{
 .announcement-content{
     flex: 1;
     overflow: auto;
+    padding-bottom: 5px;
 }
 
 .bar{
@@ -287,20 +289,54 @@ header{
 .announcement-title{
     padding: 0;
     margin: 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .announcement-text{
     padding: 0;
     margin: 0;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    overflow: auto;
 }
 
-.sla{
+.trending-title{
     padding: 0;
     margin: 0;
     font-size: 1.2rem;
     font-weight: 550;
+}
+
+.trending{
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-profile{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img{
+    width: 45px;
+}
+
+.profile-name{
+    font-size: 0.9rem;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-data{
+    cursor: pointer;
+}
+
+.profile-description{
+    font-size: 0.8rem;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
 }
 
 .project{
@@ -344,7 +380,7 @@ header{
 }
 
 .project-description{
-    color: rgb(103, 103, 103);
+    color: var(--text-color);
 }
 
 .project-interactions{
