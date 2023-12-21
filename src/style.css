@@ -251,12 +251,6 @@ header{
     gap: 20px;
 }   
 
-.project{
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: var(--shadow);
-}
-
 .informations{
     display: flex;
     flex-direction: column;
@@ -276,4 +270,68 @@ header{
     margin: 0;
     font-size: 1.2rem;
     font-weight: 550;
+}
+
+.project{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    display: flex;
+    overflow: hidden;
+}
+
+.border{
+    width: 3%;
+    height: 100%;
+    background-color: var(--purple);
+}
+
+.project-content{
+    width: 97%;
+    height: 100%;
+}
+
+.project-text{
+    overflow: auto;
+    height: 70%;
+    padding: 0 10px;
+}
+
+.project-title{
+    font-size: 1.2rem;
+    font-weight: 550;
+    margin: 0;
+    padding-top: 15px;
+}
+
+.project-description{
+    font-size: 0.9rem;
+    margin: 0;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+}
+
+.project-description{
+    color: rgb(103, 103, 103);
+}
+
+.project-interactions{
+    display: flex;
+    height: 30%;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    gap: 20px;
+}
+
+.project-img{
+    width: 30px;
+    transition: 100ms;
+}
+
+.project-img:hover{
+    transform: scale(1.1);
+    transition: 100ms;
 }
