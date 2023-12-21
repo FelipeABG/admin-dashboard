@@ -1,6 +1,6 @@
 <h1 align="center">Admin Dashboard Odin Project</h1>
 
-<p align="center">This is a web project made with HTMl and CSS to learn the fundamentals of grid display.</p>
+<p align="center">This is a web project made with HTML and CSS to learn the fundamentals of grid display.</p>
 
 <img src="src/img/readme.jpeg"></img>
 
